@@ -1,2 +1,1 @@
-# mc-java-template
-A sample maven template testing
+# Mc DSA questions learning
