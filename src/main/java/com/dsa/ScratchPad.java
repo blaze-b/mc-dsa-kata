@@ -3,6 +3,7 @@ package com.dsa;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.Queue;
 
@@ -24,6 +25,10 @@ public class ScratchPad {
     Deque<String> array = new ArrayDeque<>();
     array.addLast("uyuyuy");
     array.addFirst("rrrr");
+
+    int [] num = new int[] {};
+
+    System.out.println();
 
     System.out.println(array);
 
@@ -75,6 +80,10 @@ public class ScratchPad {
     BigDecimal bd = BigDecimal.valueOf(number);
     bd = bd.setScale(5, RoundingMode.HALF_UP);
     System.out.println(bd.doubleValue());
+
+    String s = "1222";
+
+    System.out.println(s.charAt(0) - '0');
 
   }
 
