@@ -11,16 +11,30 @@ public class ScratchPad {
 
   public static void main(String[] args) {
 
-    Queue<String> taskList = new ArrayDeque<>();
-    taskList.add("test");
-    taskList.add("test1");
-    System.out.println(taskList.poll());
-    System.out.println(taskList.peek());
-    System.out.println(taskList.poll());
-    System.out.println(taskList.poll());
-    System.out.println(taskList.poll());
+//    Deque<String> taskList = new ArrayDeque<>();
+//    taskList.add("test");
+//    taskList.add("test1");
+//    System.out.println(taskList.pollFirst());
+//    System.out.println(taskList.peekFirst());
+//    System.out.println(taskList.pollLast());
+//    System.out.println(taskList.peekFirst());
+//    System.out.println(taskList.poll());
+//    System.out.println(taskList.poll());
+//    System.out.println(taskList.poll());
 
-    System.out.println(taskList.peek());
+    int[] [] grid = new int[3][3];
+    grid[0] = new int[] {9, 0, 0};
+    grid
+
+    for(int i = 0 ; i < grid.length; i++) {
+      for (int j = 0; j < grid[0].length ; j++) {
+        System.out.println(grid[i] [j]);
+
+      }
+    }
+
+
+//    System.out.println(taskList.peek());
 
     Deque<String> array = new ArrayDeque<>();
     array.addLast("uyuyuy");
