@@ -10,15 +10,15 @@ public class RottingOranges {
     int rows = grid.length;
     int cols = grid[0].length;
 
-    Queue<int[]> rotten = new LinkedList<>();
+    Queue<int[]> queue = new LinkedList<>();
 
-    // add the rotten and count fresh
+    // add the queue and count fresh
     int fresh = 0;
 
     for (int i = 0; i < rows; i++) {
       for (int j = 0; j < cols; j ++ ){
         if (grid[i] [j] == 2) {
-          rotten.offer(new int[] {i, j} );
+          queue.offer(new int[] {i, j} );
         }
 
         if (grid[i] [j] == 1) {
@@ -34,10 +34,10 @@ public class RottingOranges {
     };
 
     // BFS
-    while (!rotten.isEmpty() && fresh > 0) {
-         int size = rotten.size();
+    while (!queue.isEmpty() && fresh > 0) {
+         int size = queue.size();
          for (int i =0; i < size; i++) {
-           int[] current = rotten.poll();
+           int[] current = queue.poll();
 
            int r = current[0];
            int c = current[1];
@@ -49,7 +49,7 @@ public class RottingOranges {
              if(nr>=0 && nc>=0 && nr<rows && nc<cols && grid[nr][nc] == 1){
                grid[nr][nc] = 2;
                fresh--;
-               rotten.offer(new int[] {nr, nc});
+               queue.offer(new int[] {nr, nc});
              }
            }
 

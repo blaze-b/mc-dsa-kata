@@ -3,9 +3,7 @@ package com.dsa;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Deque;
-import java.util.Queue;
 
 public class ScratchPad {
 
@@ -24,7 +22,6 @@ public class ScratchPad {
 
     int[] [] grid = new int[3][3];
     grid[0] = new int[] {9, 0, 0};
-    grid
 
     for(int i = 0 ; i < grid.length; i++) {
       for (int j = 0; j < grid[0].length ; j++) {
