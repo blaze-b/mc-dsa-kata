@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ListNode {
+public class ListNode implements Comparable<ListNode> {
   private int val;
   private ListNode next;
 
@@ -13,4 +13,8 @@ public class ListNode {
     this.val = val;
   }
 
+  @Override
+  public int compareTo(ListNode other) {
+    return Integer.compare(this.val, other.val);
+  }
 }
